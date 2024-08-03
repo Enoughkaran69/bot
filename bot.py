@@ -7,7 +7,7 @@ TOKEN = '6299534774:AAGMAEGxEiY8lvglLkuPE5WzVk0FGfibuw0'
 
 # Function to get a random message from the web service
 def get_random_message():
-    response = requests.get('http://your-flask-app.herokuapp.com/random_message')
+    response = requests.get('https://bot-4my0.onrender.com/random_message')
     if response.status_code == 200:
         return response.json().get('message')
     else:
