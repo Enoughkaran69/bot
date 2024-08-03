@@ -17,4 +17,4 @@ def random_message():
     return jsonify({"message": random.choice(messages)})
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
